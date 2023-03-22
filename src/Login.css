@@ -15,6 +15,11 @@ form {
   label {
     margin-top: 10px;
   }
+  .login {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   
   input {
     margin-bottom: 10px;

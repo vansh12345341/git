@@ -54,17 +54,20 @@ const Blog = () => {
         } catch (error) {
           console.log(error);
         }
-      }},[selectedCategorySlug]);
+      }
+      fetchBlogsByCategorySlug();
+    },[selectedCategorySlug]);
 
     
   
 
     const handleCategoryClick = (slug) => {
+      setSelectedCategory(slug);
       setSelectedCategorySlug(slug);
     };
     return (
       <div>
-      <div className="navbar"> {user}</div>
+      <div className="navbar">< div className="image">{user}</div></div>
       <div className="category-list">
         <div className="category-scroller">
           {blog.map((category) => (
